@@ -16,6 +16,8 @@ public:
     virtual int length() const = 0;
 };
 
+
+// Array-based Stack implementation
 template<typename Elem>
 class AStack : public Stack<Elem>
 {
@@ -45,7 +47,6 @@ public:
         }
     }
 
-    void clear();
     bool push(const Elem& it)
     {
         if (m_top >= m_size)
